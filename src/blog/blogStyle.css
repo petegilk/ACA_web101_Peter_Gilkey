@@ -14,18 +14,24 @@ header {
     background: #004566;
     border: 1px solid transparent;
     padding: 18px;
-    height: 10px;
+    height: 20px;
     text-align: right;
+    font-size: 0px;
     padding-right: 185px;
 }
 
 .header-links {
     color: white;
     font-size: 16px;
+    padding: 19px 15px 19px 15px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-decoration: none;
-    border: 1px solid black;
     text-align: center;
+}
+
+.header-links:hover {
+    background-color: #003750;
+    color: white;
 }
 
 nav {
