@@ -4,11 +4,23 @@ body {
     padding: 0;
 }
 
-h2 {
+aside h2 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 22px;
     color: lightgray;
     margin: 0 auto;
+}
+
+main h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #3a3a3c;
+}
+
+main h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    color: #3a3a3c;
+    border: 1px solid red;
 }
 
 ul {
@@ -53,7 +65,7 @@ aside section {
     height: 100vh;
     width: 75vw;
     float: right;
-    background-color: lightcyan;
+    background-color: lightgray;
     color: #2a2a2c;
 }
 
@@ -67,6 +79,22 @@ header {
 
 header h1 {
     font-size: 26px;
+}
+
+#experience {
+    background-color: whitesmoke;
+    height: 30vh;
+    width: 37.5vw;
+    float: left;
+    text-align: center;
+}
+
+#education {
+    background-color: white;
+    height: 30vh;
+    width: 37.5vw;
+    float: right;
+    text-align: center;
 }
 
 a {
