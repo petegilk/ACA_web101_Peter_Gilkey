@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.img-container {
+    width: 90%;
+    margin: 5% 4% 2% 4%;
+    display: inline-block;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+
+.article-preview {
+    border: 1px solid transparent;
+    width: 90%;
+    margin: 0% 4% 2% 4%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.article-preview h1 {
+    font-size: 36px;
+    color: rgb(37, 37, 37);
+}
+
+.article-preview p {
+    font-weight: bold;
+    font-size: 18px;
+    color: #575757;
+}
+
+.article-tags{
+    border: 1px solid transparent;
+    color: white;
+    background-color: #505050;
+    margin-left: 4%;
+    height: 50px;
+    width: 120px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+#top-stories {
+    display: none;
+}
+
+#footer-left {
+    background-color: #5d5d5d;
+    height: 220px;
+    width: 50%;
+    margin-top: 25px;
+    float: left;
+}
+
+#footer-right {
+    background-color: #5d5d5d;
+    height: 220px;
+    width: 50%;
+    margin-top: 25px;
+    float: right;
+}
+
+h3 {
+    color: white;
+    margin-left: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.footer-ul {
+    list-style-type: none;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: -10px;
+}
+
+.footer-li {
+    padding: 4px;
+}
+
+footer div ul li {
+    border-bottom: 1px solid gray;
+    max-width: 200px;
+}
+
+.lastListItem {
+    border-bottom: none;
+}
+
+@media (min-width: 640px) {
+    .img-container {
+        max-width: 780px;
+    }
+
+    .article-preview {
+        max-width: 760px;
+    }
+
+    #top-stories {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        display: inline-block;
+        max-height: 439px;
+        max-width: 300px;
+        margin-right: 55px;
+        margin-top: 63px;
+        height: 500px;
+        float: right;
+    }
+
+    aside h2 {
+        margin-left: 40px;
+        padding: 8px;
+        border-bottom: 1px solid #5d5d5d;
+    }
+
+    .aside-ul {
+        list-style-type: none;
+    }
+
+    .aside-li {
+        margin-bottom: 18px;
+        font-weight: bold;
+        text-align: left;
+    }
+
+    #footer-right {
+        display: inline;
+    }
+    
+    #footer-left {
+        display: inline;
+    }
+
+    .article-preview:hover {
+        background: linear-gradient(to right, rgba(235, 235, 235, 0.85), rgba(241, 241, 241, 0.85));
+    }
+}
