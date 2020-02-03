@@ -6,14 +6,117 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>CSS-Grids Dashboard</title>
     <link rel="stylesheet" href="cssgrids-styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+    <script src="https://kit.fontawesome.com/7001303531.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <main class="main-container">
-        <aside class="aside-nav"></aside>
+        <nav class="topnavbar">
+            <i class="fas fa-envelope"></i>
+            <i class="fas fa-tools"></i>
+            <i class="fas fa-bell"></i>
+            <i class="fas fa-user"></i>
+        </nav>
+        <header class="header1">
+            <h1>Dashboard</h1>
+            <h4>Welcome to your dashboard.</h4>
+        </header>
+        <div class="directory-bar">
+            <a href="" class="directory-links">Home</a>
+            <p>&nbsp/&nbsp</p>
+            <a href="" class="directory-links">Tools</a>
+            <p>&nbsp/&nbsp</p>
+            <a href="" class="directory-links">Calculator</a>
+        </div>
+        <aside class="aside-toolbar">
+            <p class="toolbar-buttons"></p>
+            <a href="" class="toolbar-buttons">Dashboard</a>
+            <a href="" class="toolbar-buttons">UI Elements</a>
+            <a href="" class="toolbar-buttons">Charts</a>
+            <a href="" class="toolbar-buttons">Tools</a>
+            <a href="" class="toolbar-buttons">Calculator</a>
+            <a href="" class="toolbar-buttons">Clock</a>
+            <a href="" class="toolbar-buttons">Checklist</a>
+            <a href="" class="toolbar-buttons">Date</a>
+        </aside>
         <main class="main-dash">
-            <div></div>
-            <div></div>
+            <div class="calculator-grid">
+                <div class="text-input">0.00</div>
+                <div class="calc-buttons">MC</div>
+                <div class="calc-buttons">M+</div>
+                <div class="calc-buttons">/</div>
+                <div class="calc-buttons">X</div>
+                <div class="calc-buttons">7</div>
+                <div class="calc-buttons">8</div>
+                <div class="calc-buttons">9</div>
+                <div class="calc-buttons">-</div>
+                <div class="calc-buttons">4</div>
+                <div class="calc-buttons">5</div>
+                <div class="calc-buttons">6</div>
+                <div class="calc-buttons">+</div>
+                <div class="calc-buttons">1</div>
+                <div class="calc-buttons calc-equal">=</div>
+                <div class="calc-buttons">2</div>
+                <div class="calc-buttons">3</div>
+                <div class="calc-buttons calc-zero">0</div>
+                <div class="calc-buttons">.</div>
+              </div>
         </main>
+        <div class="side-widgets" id="checklist">
+            <ul>
+                <li><input type="checkbox">Get groceries</li>
+                <li><input type="checkbox">Walk the dog</li>
+                <li><input type="checkbox">Go to gym</li>
+                <li><input type="checkbox">Go fishing</li>
+            </ul>
+        </div>
+        <div class="side-widgets" >
+            <div id="clock-widget">10:33</div>
+        </div>
+        <div class="side-widgets" id="todays-date">
+            <div id="date-left">
+                <p>January 27,</p>
+                <p>2020</p>
+            </div>
+            <div id="date-right">
+                <div class="month-bar">January</div>
+                <div class="days-of-month"></div>
+                <div class="days-of-month"></div>
+                <div class="days-of-month"></div>
+                <div class="days-of-month">1</div>
+                <div class="days-of-month">2</div>
+                <div class="days-of-month">3</div>
+                <div class="days-of-month">4</div>
+                <div class="days-of-month">5</div>
+                <div class="days-of-month">6</div>
+                <div class="days-of-month">7</div>
+                <div class="days-of-month">8</div>
+                <div class="days-of-month">9</div>
+                <div class="days-of-month">10</div>
+                <div class="days-of-month">11</div>
+                <div class="days-of-month">12</div>
+                <div class="days-of-month">13</div>
+                <div class="days-of-month">14</div>
+                <div class="days-of-month">15</div>
+                <div class="days-of-month">16</div>
+                <div class="days-of-month">17</div>
+                <div class="days-of-month">18</div>
+                <div class="days-of-month">19</div>
+                <div class="days-of-month">20</div>
+                <div class="days-of-month">21</div>
+                <div class="days-of-month">22</div>
+                <div class="days-of-month">23</div>
+                <div class="days-of-month">24</div>
+                <div class="days-of-month">25</div>
+                <div class="days-of-month">26</div>
+                <div class="days-of-month todays-date">27</div>
+                <div class="days-of-month">28</div>
+                <div class="days-of-month">29</div>
+                <div class="days-of-month">30</div>
+                <div class="days-of-month">31</div>
+                <div class="days-of-month"></div>
+            </div>
+        </div>
     </main>
 </body>
 </html>
