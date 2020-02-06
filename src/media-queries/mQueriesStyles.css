@@ -1,13 +1,14 @@
 body {
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .img-container {
     width: 90%;
     margin: 5% 4% 2% 4%;
     display: inline-block;
-    text-align: center;
 }
 
 img {
@@ -24,7 +25,7 @@ img {
 }
 
 .article-preview h1 {
-    font-size: 36px;
+    font-size: 30px;
     color: rgb(37, 37, 37);
 }
 
@@ -49,20 +50,26 @@ img {
     display: none;
 }
 
+#footer-area {
+    display: flex;
+}
+
 #footer-left {
     background-color: #5d5d5d;
-    height: 220px;
+    height: 240px;
     width: 50%;
     margin-top: 25px;
-    float: left;
+    display: flex;
+    flex-direction: column;
 }
 
 #footer-right {
     background-color: #5d5d5d;
-    height: 220px;
+    height: 240px;
     width: 50%;
     margin-top: 25px;
-    float: right;
+    display: flex;
+    flex-direction: column;
 }
 
 h3 {
@@ -79,7 +86,7 @@ h3 {
 }
 
 .footer-li {
-    padding: 4px;
+    padding: 5px 3%;
 }
 
 footer div ul li {
@@ -91,7 +98,9 @@ footer div ul li {
     border-bottom: none;
 }
 
-@media (min-width: 640px) {
+/* ***Media-Queries for larger displays*** */
+
+@media (min-width: 768px) {
     .img-container {
         max-width: 780px;
     }
@@ -100,15 +109,8 @@ footer div ul li {
         max-width: 760px;
     }
 
-    #top-stories {
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        display: inline-block;
-        max-height: 439px;
-        max-width: 300px;
-        margin-right: 55px;
-        margin-top: 63px;
-        height: 500px;
-        float: right;
+    .article-preview h1 {
+        font-size: 36px;
     }
 
     aside h2 {
@@ -137,5 +139,25 @@ footer div ul li {
 
     .article-preview:hover {
         background: linear-gradient(to right, rgba(235, 235, 235, 0.85), rgba(241, 241, 241, 0.85));
+    }
+}
+
+@media (min-width: 1230px) {
+    .top-section {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    #top-stories {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        display: inline-block;
+        width: 20%;
+        max-height: 439px;
+        max-width: 300px;
+        margin-right: 55px;
+        margin-top: 63px;
+        height: 500px;
+        float: right;
     }
 }
