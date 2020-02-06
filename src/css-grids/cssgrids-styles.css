@@ -136,6 +136,11 @@ p.toolbar-buttons {
     border-radius: 6px;
 }
 
+.top-logos {
+    text-decoration: none;
+    color: white;
+}
+
 /*To do list*/
 #checklist {
 }
