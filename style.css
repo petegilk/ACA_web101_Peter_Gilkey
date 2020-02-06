@@ -9,6 +9,12 @@ body {
   overflow-x: hidden;
 }
 
+/* ***HOMEWORK LINKS*** */
+.hidden-links {
+  display: none;
+}
+/************************/
+
 .logo {
   width: 100px;
   height: 100px;
