@@ -2,13 +2,14 @@ body {
   margin: 0;
   padding: 0;
   height: 100vh;
+  overflow-x: hidden;
 }
 
 .main-container {
   height: 100%;
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 300px 486px 360px;
+  grid-template-rows: 300px 486px 360px 182px;
 }
 
 /* ***Header bar, top of page*** */
@@ -58,7 +59,7 @@ body {
   color: #0ba39c;
 }
 
-/* ***First image section with rows of descriptions*** */
+/* ***Featured section, mission statement*** */
 
 .featured {
   grid-column: 1/-1;
@@ -72,6 +73,7 @@ body {
   height: 485px;
   margin: 0;
   padding: 0;
+  border-left: 3px solid black;
 }
 
 .featured-right {
@@ -112,22 +114,104 @@ body {
   background-color: #1fc3bc;
 }
 
-/* ***Lower section, Style previews*** */
+/* ***Lower images, Style previews*** */
 
 .hairstyles {
   grid-column: 1/-1;
   grid-row: 3/4;
-  background-color: lightgray;
+  background-color: white;
+  display: flex;
 }
 
-.hairstyles {
-  border: 1px solid red;
-}
-
-.pictures-row {
-  border: 1px solid green;
+.pictures-ul {
+  list-style-type: none;
+  width: 100%;
+  padding-left: 0;
+  margin: 35px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .pictures {
-  border: 1px solid yellowgreen;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.pictures a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pictures h2 {
+  font-family: 'Righteous', cursive;
+}
+
+.pictures img {
+  border: 2px solid #484848;
+  opacity: 78%;
+  transition: opacity .9s;
+}
+
+.pictures img:hover {
+  opacity: 100%;
+}
+
+/* ***Footer section*** */
+
+.footer {
+  grid-column: 1/-1;
+  grid-row: 4/5;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 20px 122px 1fr;
+}
+
+.footer-left {
+  background-color: rgb(0, 0, 0);
+  grid-column: 1/2;
+  grid-row: 2/3;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 13px;
+  opacity: 85%;
+}
+
+.footer-right {
+  background-color: black;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 24px;
+  opacity: 85%;
+}
+
+.footer-right ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-right li {
+  display: flex;
+  box-sizing: border-box;
+  border: 2px solid white;
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.footer-right a {
+  text-decoration: none;
+  color: white;
 }
