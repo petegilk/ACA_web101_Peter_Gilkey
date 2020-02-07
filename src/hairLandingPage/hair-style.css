@@ -112,10 +112,22 @@ body {
   background-color: #1fc3bc;
 }
 
-/* ***Bottom section, Style previews*** */
+/* ***Lower section, Style previews*** */
 
 .hairstyles {
   grid-column: 1/-1;
   grid-row: 3/4;
   background-color: lightgray;
+}
+
+.hairstyles {
+  border: 1px solid red;
+}
+
+.pictures-row {
+  border: 1px solid green;
+}
+
+.pictures {
+  border: 1px solid yellowgreen;
 }
