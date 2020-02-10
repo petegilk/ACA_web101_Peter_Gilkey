@@ -12,7 +12,7 @@ body {
   grid-template-rows: 300px 486px 360px 182px;
 }
 
-/* ***Header bar, top of page*** */
+/* @@@@@@@@Header bar, top of page@@@@@@@@ */
 
 .header-wrap {
   background-color: white;
@@ -59,7 +59,7 @@ body {
   color: #0ba39c;
 }
 
-/* ***Featured section, mission statement*** */
+/* @@@@@@@@Featured section, mission statement@@@@@@@@ */
 
 .featured {
   grid-column: 1/-1;
@@ -114,7 +114,7 @@ body {
   background-color: #1fc3bc;
 }
 
-/* ***Lower images, Style previews*** */
+/* @@@@@@@@Lower images, Style previews@@@@@@@@ */
 
 .hairstyles {
   grid-column: 1/-1;
@@ -160,7 +160,7 @@ body {
   opacity: 100%;
 }
 
-/* ***Footer section*** */
+/* @@@@@@@@Footer section@@@@@@@@ */
 
 .footer {
   grid-column: 1/-1;
@@ -211,7 +211,14 @@ body {
   margin: 0 10px;
 }
 
-.footer-right a {
+.footer-right li a {
   text-decoration: none;
   color: white;
+  display: block;
+  padding: 6px 10px;
+}
+
+.footer-right li a:hover {
+  background-color: white;
+  color: black;
 }
