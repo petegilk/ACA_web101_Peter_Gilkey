@@ -10,9 +10,10 @@
 body {
   background-color: lightgray;
   height: 100vh;
-  background-image: url(https://images.pexels.com/photos/34950/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+  background-image: url(./src/css-grids/ben-klea-QF8qP_pWMvs-unsplash.jpg);
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .main-container {
@@ -26,7 +27,7 @@ header {
   height: 600px;
   width: 100%;
   border: 1px solid red;
-  background-color: rgb(100, 100, 100, .9);
+  background-color: rgb(100, 100, 100, .5);
   display: flex;
   flex-direction: row;
 }
@@ -61,6 +62,7 @@ header {
   height: 50px;
   display: flex;
   flex-direction: row;
+  background-color: transparent;
 }
 
 .navlinks {
@@ -73,7 +75,8 @@ header {
   align-items: center;
   text-decoration: none;
   text-transform: uppercase;
-  background-color: rgb(48, 48, 48);
+  background-color: rgb(48, 48, 48, .8);
+  /* background-color: transparent; */
   color: rgb(209, 209, 209);
   transition: background-color .7s;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -83,13 +86,45 @@ header {
 
 .navlinks:hover {
   color: white;
-  background-color: rgb(63, 63, 63);
-  border: 1px outset;
-  transform: translateY(-2px);
+  background-color: rgb(48,48,48, .9);
+  border-top: 2px outset orange;
+  transform: translateY(-3px);
   transition: transform .7s;
 }
 
 main {
   border: 2px solid orange;
   height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.media-bar {
+  border: 1px solid greenyellow;
+  flex: 1;
+}
+
+.projects-bar {
+  border: 1px solid powderblue;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.media-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects-bar .projects {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid red;
+  background-color: rgb(192, 192, 192, .8);
+  margin: 20px;
 }
