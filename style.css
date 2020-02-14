@@ -46,9 +46,9 @@ header {
 }
 
 .header-title h1 {
-  font-size: 80px;
-  letter-spacing: .1rem;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 70px;
+  letter-spacing: .2rem;
+  font-family: 'roboto mono'
   font-weight: 500;
 }
 
@@ -64,9 +64,8 @@ header {
 }
 
 .navlinks {
-  border: 2px inset;
-  border-radius: 2px;
-  margin: 1px;
+  /* border: 2px inset; */
+  /* border-radius: 2px; */
   flex: 1;
   list-style-type: none;
   display: flex;
@@ -85,7 +84,9 @@ header {
 .navlinks:hover {
   color: white;
   background-color: rgb(63, 63, 63);
-  border: 2px outset;
+  border: 1px outset;
+  transform: translateY(-2px);
+  transition: transform .7s;
 }
 
 main {
