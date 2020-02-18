@@ -35,6 +35,14 @@ header {
 #image-wrap {
   flex: 1;
   border: 1px solid red;
+  /* height: 205px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#image-wrap img {
+  /* height: 200px; */
 }
 
 .header-title {
@@ -48,8 +56,8 @@ header {
 
 .header-title h1 {
   font-size: 70px;
-  letter-spacing: .2rem;
-  font-family: 'roboto mono'
+  letter-spacing: .1rem;
+  font-family: 'roboto mono';
   font-weight: 500;
 }
 
@@ -67,8 +75,8 @@ header {
 
 .navlinks {
   /* border: 2px inset; */
-  /* border-radius: 2px; */
   flex: 1;
+  margin: 0 1px;
   list-style-type: none;
   display: flex;
   justify-content: center;
@@ -76,7 +84,6 @@ header {
   text-decoration: none;
   text-transform: uppercase;
   background-color: rgb(48, 48, 48, .8);
-  /* background-color: transparent; */
   color: rgb(209, 209, 209);
   transition: background-color .7s;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -87,7 +94,7 @@ header {
 .navlinks:hover {
   color: white;
   background-color: rgb(48,48,48, .9);
-  border-top: 2px outset orange;
+  border: 2px outset orange;
   transform: translateY(-3px);
   transition: transform .7s;
 }
@@ -102,6 +109,18 @@ main {
 .media-bar {
   border: 1px solid greenyellow;
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 25px 15px;
+}
+
+.media-bar span {
+  color: rgb(209, 209, 209);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  font-size: 20px;
 }
 
 .projects-bar {
@@ -109,13 +128,7 @@ main {
   flex: 1;
   display: flex;
   flex-direction: column;
-}
-
-.media-bar {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  margin: 25px 15px;
 }
 
 .projects-bar .projects {
@@ -126,5 +139,33 @@ main {
   align-items: center;
   border: 1px solid red;
   background-color: rgb(192, 192, 192, .8);
-  margin: 20px;
+  margin-bottom: 20px;
+}
+
+#dropdown {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgb(209, 209, 209);
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  bottom: 250px;
+  background-color: lightgray;
+  min-width: 160px;
+  width: inherit;
+}
+
+.dropdown-content a {
+  color: (209, 209, 209);
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content:hover {
+  display: inline-block;
+  position: absolute;
 }
