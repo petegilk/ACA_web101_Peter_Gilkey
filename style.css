@@ -123,39 +123,49 @@ header {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 600;
   font-size: 16px;
-  z-index: 1000;
+  box-shadow: 0 0 5px 0 black;
+  border-top: 1px outset rgb(83, 83, 83);
+  z-index: 10;
+}
+
+.navlinks:hover {
+  color: white;
+  background-color: rgb(48,48,48, .9);
+  transform: translateY(-3px);
+  transition: transform .7s ease;
+  box-shadow: 0 0 7px 0 black;
 }
 
 /*@@@@@@@@ NAV LINK ANIMATIONS @@@@@@@*/
 
 .navbar .navlinks:nth-of-type(1) {
-  animation: drop-from-top .4s ease-in;
-  animation-delay: 1000ms;
+  animation: drop-from-top .6s ease-in;
+  animation-delay: 800ms;
 }
 
 .navbar .navlinks:nth-of-type(2) {
-  animation: drop-from-top .4s ease-in;
-  animation-delay: 1150ms;
+  animation: drop-from-top .6s ease-in;
+  animation-delay: 950ms;
 }
 
 .navbar .navlinks:nth-of-type(3) {
-  animation: drop-from-top .4s ease-in;
-  animation-delay: 1300ms;
+  animation: drop-from-top .6s ease-in;
+  animation-delay: 1100ms;
 }
 
 .navbar .navlinks:nth-of-type(4) {
-  animation: drop-from-top .4s ease-in;
-  animation-delay: 1450ms;
+  animation: drop-from-top .6s ease-in;
+  animation-delay: 1250ms;
 }
 
 .navbar .navlinks:nth-of-type(5) {
-  animation: drop-from-top .4s ease-in;
-  animation-delay: 1600ms;
+  animation: drop-from-top .6s ease-in;
+  animation-delay: 1400ms;
 }
 
 .navbar .navlinks:nth-of-type(6) {
-  animation: drop-from-top .4s ease-in;
-  animation-delay: 1750ms;
+  animation: drop-from-top .6s ease-in;
+  animation-delay: 1550ms;
 }
 
 @keyframes drop-from-top {
@@ -164,21 +174,12 @@ header {
   }
 
   10% {
-    transform: translateY(18%);
+    transform: translateY(14%);
   }
 
   100% {
     transform: translateY(0);
   }
-}
-
-.navlinks:hover {
-  color: white;
-  background-color: rgb(48,48,48, .9);
-  /* border: 2px outset orange; */
-  transform: translateY(-3px);
-  transition: transform .7s;
-  box-shadow: 0 0 8px 0 black;
 }
 
 /*@@@@@@@ MAIN BODY SECTION @@@@@@@*/
@@ -196,7 +197,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 25px 15px;
+  margin: 25px 0px;
   background-color: rgb(0, 0, 0, .5);
 }
 
@@ -230,12 +231,13 @@ main section span {
   color: rgb(209, 209, 209);
   font-size: 20px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  border: 2px solid transparent;
-  transition: border .5s;
+  background-color: transparent;
+  transition: background-color .5s ease;
 }
 
 .projects-bar .projects:hover {
-  border: 2px solid rgb(0, 0, 255, .5);
+  background-color: rgb(0, 0, 0, .5);
+  transition: background-color .5s ease;
 }
 
 .contact-form {
