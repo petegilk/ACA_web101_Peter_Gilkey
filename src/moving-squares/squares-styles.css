@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.main-container {
+  border: 2px solid red;
+  background-color: black;
+  height: 100%;
+  margin: 15px;
+}
+
+.squares-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid white;
+}
+
+.squares {
+  border: 1px solid white;
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  margin: 2px 0;
+}
+
+/*@@@@@@@@@@@@@@ ODD SQUARES TRANSFORM @@@@@@@@@@@@@@*/
+
+.squares-column .squares:nth-of-type(odd) {
+  transform: scale(1) translateX(1);
+  transition: transform ease .4s;
+}
+
+.squares-column:hover .squares:nth-of-type(odd) {
+  transform: scale(2) translateX(10em);
+  transition: transform ease .4s;
+}
+
+/*@@@@@@@@@@@@@ EVEN SQUARES TRANSFORM @@@@@@@@@@@@@*/
+
+.squares-column .squares:nth-of-type(even) {
+  transform: scale(1) translateX(1);
+  transition: transform ease .4s;
+}
+
+.squares-column:hover .squares:nth-of-type(even) {
+  transform: scale(.5) translateX(-200px);
+  transition: transform ease .4s;
+}
+
+.squares:nth-of-type(1) {
+  background-color: chartreuse;
+}
+
+.squares:nth-of-type(2) {
+  background-color: cornflowerblue;
+}
+
+.squares:nth-of-type(3) {
+  background-color: darkblue;
+}
+
+.squares:nth-of-type(4) {
+  background-color: darkred;
+}
+
+.squares:nth-of-type(5) {
+  background-color: darkturquoise;
+}
+
+.squares:nth-of-type(6) {
+  background-color: dimgray;
+}
+
+.squares:nth-of-type(7) {
+  background-color: orange;
+}
+
+.squares:nth-of-type(8) {
+  background-color: green;
+}
+
+.squares:nth-of-type(9) {
+  background-color: indigo;
+}
+
+.squares:nth-of-type(10) {
+  background-color: khaki;
+}
+
+.squares:nth-of-type(11) {
+  background-color: lightgreen;
+}
+
+.squares:nth-of-type(12) {
+  background-color: red;
+}
