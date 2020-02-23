@@ -15,7 +15,7 @@
         </div>
         <div class="header-title">
           <h1>Peter Gilkey</h1>
-          <h3>Front End Developer</h3>
+          <h3>Web Dev Student</h3>
         </div>
       </header>
       <nav>
@@ -30,6 +30,9 @@
       </nav>
       <main>
         <section class="media-bar">
+            <!-- <video autoplay muted loop>
+              <source src="./orbitLoop.mp4" type="video/mp4">
+            </video> -->
           <span>ISS Live Feed</span>
           <iframe width="480" height="270" src="https://ustream.tv/embed/9408562" scrolling="no" allowfullscreen webkitallowfullscreen frameborder="0" style="border: 0 none transparent;"></iframe>
         </section>
@@ -46,11 +49,26 @@
             </a>
         </section>
       </main>
-      <section class="contact-form">
+      <footer class="contact-form">
         <form action="">
-          
+          <div class="form-left form-format">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name-input" placeholder="Enter Your Name">
+            <label for="email">E-mail:</label>
+            <input type="text" id="email" name="email-input" placeholder="E-mail Address"> 
+            <label for="zip-location">ZIP Code:</label>
+            <input type="text" id="zip-location" name="location" placeholder="ZIP Code">
+          </div>
+          <div class="form-right form-format">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" maxlength="350" placeholder="Leave me a message.."></textarea>
+            <div class="button-wrap">
+              <input type="submit" value="Submit">
+              <input type="reset" value="Reset">
+            </div>
+          </div>
         </form>
-      </section>
+      </footer>
     </div>
   </body>
 </html>
