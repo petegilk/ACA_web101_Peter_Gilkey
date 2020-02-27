@@ -1,0 +1,288 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.navbar {
+  width: 100%;
+  height: 90px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.logo {
+  width: 70px;
+  height: 100%;
+  background-image: url(../images/wfmlogo.png);
+  background-size: cover;
+  background-position: center;
+  flex: 1;
+}
+
+.navlist {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  flex: 10;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+.navlinks {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.navlinks a {
+  text-decoration: none;
+  font-family: 'Source Sans Pro', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  color: rgb(20,102,66);
+}
+
+.navlinks a:hover {
+  color: black;
+}
+
+.searchlogo {
+  height: 70px;
+  width: 70px;
+  flex: 1;
+  font-size: 26px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 10px;
+  color: rgb(20,102,66);
+}
+
+.body-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.panels-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-panel {
+  width: 50%;
+  height: 100%;
+  background-color: rgba(239, 235, 234, 0.719);
+  padding: 120px;
+}
+
+.about-panel h4 a {
+  text-decoration: none;
+  color: rgb(86,85,83);
+}
+
+.about-panel h4 a:hover {
+  text-decoration: underline;
+}
+
+.about-panel h4 {
+  color: rgb(86,85,83);
+  font-size: 18px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.about-panel h1 {
+  color: rgb(46,45,43);
+  font-size: 50px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.about-panel p {
+  color: rgb(46,45,43);
+  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  line-height: 1.6;
+}
+
+.articles-panel {
+  width: 50%;
+  height: 100%;
+  border: 1px solid greenyellow;
+  display: flex;
+  flex-direction: column;
+}
+
+.article-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.article-styles {
+  flex: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid blue;
+}
+
+.img-size {
+  height: 250px;
+  width: 250px;
+}
+
+.article-styles:nth-of-type(1) .article-img {
+  background-image: url(./images/original-wfm-store-pic._TTW_._CR23\,0\,213\,160_.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.article-styles:nth-of-type(2) .article-img {
+  background-image: url(./images/custom-floral-arrangements-660x495-2x._TTW_._CR0\,0\,1320\,990_._SR580\,435_._QL100_.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.article-styles:nth-of-type(3) .article-img {
+  background-image: url(./images/3.Caring-Communities_2280x1282._TTW_._CR285\,0\,1709\,1282_._SR580\,435_._QL100_.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* @@@@@@@@@@ FOOTER SECTION @@@@@@@@@ */
+
+.footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 80px;
+}
+
+.footer-column1 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.footer-lists {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+}
+
+.footer-lists ul {
+  list-style-type: none;
+  color: green;
+  font-size: 20px;
+  font-family: 'Merriweather', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 30px 0;
+}
+
+.footer-lists ul h4 {
+  margin-bottom: 10px;
+}
+
+.footer-lists ul li {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  color: black;
+}
+
+.footer-lists ul li a {
+  font-size: 16px;
+  color: black;
+}
+
+.footer-lists ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-lists ul a {
+  text-decoration: none;
+}
+
+.footer-lists:nth-of-type(3) ul .social-media-icons {
+  display: flex;
+  flex-direction: row;
+}
+
+.social-media-icons li a i {
+  font-size: 40px;
+  margin-right: 10px;
+}
+
+.footer-column2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 15px 0;
+}
+
+.company-footer {
+  font-weight: 600;
+  margin: 5px;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+.footer-nav li a {
+  padding: 0 10px;
+  border-right: 1px solid black;
+  text-decoration: none;
+  color: black;
+}
+
+.footer-nav li a:hover {
+  text-decoration: underline;
+}
+
+.footer-nav li:nth-of-type(6) a {
+  border-right: none;
+}
+
+@media (max-width: 576px) {
+  .logo {
+    width: 90px;
+  }
+
+  .navbar {
+    display: grid;
+    grid-template-columns: 20% 1fr 20%;
+    grid-template-rows: 100%;
+  }
+
+  .navlinks {
+    border-right: 1px solid rgba(0, 0, 0, 0.473);
+    margin: 4px;
+    text-decoration: underline;
+  }
+
+  .navlinks:nth-of-type(5) {
+    border-right: none;
+  }
+
+  .navlinks a {
+    font-size: 14px;
+  }
+}
