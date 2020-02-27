@@ -85,27 +85,27 @@
   padding: 60px 0;
 }
 
-.panel1 {
+.panel {
   background-color: white;
   width: 40%;
   height: 100%;
   padding: 30px 60px 50px 60px;
 }
 
-.panel1 h3 {
+.panel h3 {
   font-size: 60px;
   font-family: 'Merriweather';
   font-weight: 600;
   color: rgb(46,45,43);
 }
 
-.panel1 p {
+.panel p {
   margin: 20px 0 45px 0;
   font-family: 'Source Sans Pro', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 17px;
 }
 
-.panel1 a {
+.panel a {
   text-decoration: none;
   color: white;
   background-color: rgb(0,78,54);
@@ -116,7 +116,7 @@
   border-radius: 2px;
 }
 
-.panel1 a:hover {
+.panel a:hover {
   background-color: #006f46;
 }
 
@@ -143,7 +143,7 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 16px;
   font-weight: 700;
-  border: 1px solid green;
+  border: 1px solid #006f46;
   color: rgb(0,78,54);
   margin: 0 10px;
   padding: 10px 36px;
@@ -158,4 +158,204 @@
 .subnav-links:hover li {
   border-bottom: 2px solid #006f46;
   color: #006f46;
+}
+
+/* @@@@@@@@ BODY SECTIONS AND ARTICLES @@@@@@@@@@ */
+
+.body-section {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* @@@@@@@ IMAGE SECTION2 AND 3/IMG ROW @@@@@@@@ */
+
+.image-section2 {
+  width: 100%;
+  height: 100%;
+  margin: 120px;
+  padding-top: 60px;
+  background-image: url(./images/image-section2-img.jpg);
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: 50% 66%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.panel2styles {
+  margin-left: 10%;
+  height: 90%;
+  box-shadow: 0 15px 15px -2px rgba(128, 128, 128, 0.103);
+}
+
+/* @@@@@@@@@@ IMAGE ROW @@@@@@@@@ */
+
+.image-section3 {
+  width: 100%;
+  background-color: white;
+}
+
+.image-section3 ul li {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  justify-content: space-evenly;
+}
+
+.imagerow-container {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  text-decoration: none;
+}
+
+.imagerow-container img {
+  width: 100%;
+}
+
+.imagerow-container p {
+  color: rgb(0,78,54);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 21px;
+  font-weight: 700;
+  padding: 18px 0;
+  border-bottom: 2px solid transparent;
+}
+
+.imagerow-container:hover p {
+  text-decoration: underline;
+}
+
+/* @@@@@@@ IMAGE SECTION 4 @@@@@@@@@ */
+
+.image-section4 {
+  height: 100%;
+  width: 100%;
+  margin: 50px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.panel4 {
+  height: 80%;
+}
+
+.image4-wrap {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 50px;
+}
+
+.image4-wrap img {
+  width: 100%;
+  height: auto;
+}
+
+/* @@@@@@@@@@ FOOTER SECTION @@@@@@@@@ */
+
+.footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 80px;
+}
+
+.footer-column1 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.footer-lists {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+}
+
+.footer-lists ul {
+  list-style-type: none;
+  color: green;
+  font-size: 20px;
+  font-family: 'Merriweather', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 30px 0;
+}
+
+.footer-lists ul h4 {
+  margin-bottom: 10px;
+}
+
+.footer-lists ul li {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  color: black;
+}
+
+.footer-lists ul li a {
+  font-size: 16px;
+  color: black;
+}
+
+.footer-lists ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-lists ul a {
+  text-decoration: none;
+}
+
+.footer-lists:nth-of-type(3) ul .social-media-icons {
+  display: flex;
+  flex-direction: row;
+}
+
+.social-media-icons li a i {
+  font-size: 40px;
+  margin-right: 10px;
+}
+
+.footer-column2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 15px 0;
+}
+
+.company-footer {
+  font-weight: 600;
+  margin: 5px;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+.footer-nav li a {
+  padding: 0 10px;
+  border-right: 1px solid black;
+  text-decoration: none;
+  color: black;
+}
+
+.footer-nav li a:hover {
+  text-decoration: underline;
+}
+
+.footer-nav li:nth-of-type(6) a {
+  border-right: none;
+}
+
+@media (min-width: 576px) {
+  
 }
