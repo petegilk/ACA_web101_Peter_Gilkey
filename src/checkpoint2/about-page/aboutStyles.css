@@ -65,7 +65,7 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding-right: 10px;
+  padding-right: 30px;
   color: rgb(20,102,66);
 }
 
@@ -80,12 +80,11 @@ body {
 .panels-container {
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: center;
 }
 
 .about-panel {
-  width: 50%;
+  width: 45%;
   height: 100%;
   background-color: rgba(239, 235, 234, 0.719);
   padding: 120px;
@@ -120,9 +119,8 @@ body {
 }
 
 .articles-panel {
-  width: 50%;
+  width: 55%;
   height: 100%;
-  border: 1px solid greenyellow;
   display: flex;
   flex-direction: column;
 }
@@ -137,7 +135,27 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border: 1px solid blue;
+  padding: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.article-styles h4 {
+  color: rgb(0,78,54);
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.article-styles p {
+  line-height: 1.6;
+}
+
+.article-link {
+  text-decoration: none;
+}
+
+.article-link:hover {
+  text-decoration: underline;
+  color: rgb(0,78,54)
 }
 
 .img-size {
@@ -157,8 +175,14 @@ body {
   background-size: contain;
 }
 
-.article-styles:nth-of-type(3) .article-img {
+.article-row:nth-of-type(2) .article-styles:nth-of-type(1) .article-img {
   background-image: url(./images/3.Caring-Communities_2280x1282._TTW_._CR285\,0\,1709\,1282_._SR580\,435_._QL100_.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.article-row:nth-of-type(2) .article-styles:nth-of-type(2) .article-img {
+  background-image: url(./images/arrow-final-mm-120619-0134._TTW_._CR169\,0\,2661\,1996_._SR580\,435_._QL100_.jpg);
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -261,6 +285,22 @@ body {
   border-right: none;
 }
 
+@media (max-width: 768px) {
+  .panels-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-panel {
+    width: 100%;
+    padding: 60px;
+  }
+
+  .articles-panel {
+    width: 100%;
+  }
+}
+
 @media (max-width: 576px) {
   .logo {
     width: 90px;
@@ -285,4 +325,36 @@ body {
   .navlinks a {
     font-size: 14px;
   }
+
+  .article-row {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .img-size {
+    width: 400px;
+    height: 400px;
+  }
+
+  .footer-column1 {
+    flex-direction: column;
+  }
+
+  .footer-nav {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .footer-nav li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-nav li a {
+    border-right: none;
+    font-size: 10px;
+  }
+
 }

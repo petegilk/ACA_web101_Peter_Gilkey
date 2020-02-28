@@ -407,6 +407,10 @@
     padding: 5px 10px;
   }
 
+  .footer-column1 {
+    flex-direction: column;
+  }
+
   .footer-nav {
     display: flex;
     flex-direction: row;
