@@ -6,12 +6,15 @@ function addGamePiece (selectedElement) {
 
   //create element
   var xo = document.createElement('h1')
+  var previousPlay;
   
   //add text to element
   xo.innerText = "X"
   selectedElement.appendChild(xo)
-  if (selectedElement.innerText === "X") {
-    selectedElement.innerText === "O"
+
+  if (previousPlay === "X") {
+    xo.innerText === "O"
+  
   } else if (selectedElement.innerText === "O") {
     selectedElement.innerText === null
   }
