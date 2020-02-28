@@ -1,0 +1,283 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+/* @@@@@@@ NAVBAR @@@@@@@@@@@@@@ */
+
+.navbar {
+  width: 100%;
+  height: 90px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.logo {
+  width: 70px;
+  height: 100%;
+  background-image: url(../images/wfmlogo.png);
+  background-size: cover;
+  background-position: center;
+  flex: 1;
+}
+
+.navlist {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  flex: 10;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+.navlinks {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.navlinks a {
+  text-decoration: none;
+  font-family: 'Source Sans Pro', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  color: rgb(20,102,66);
+}
+
+.navlinks a:hover {
+  color: black;
+}
+
+.searchlogo {
+  height: 70px;
+  width: 70px;
+  flex: 1;
+  font-size: 26px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 30px;
+  color: rgb(20,102,66);
+}
+
+/* @@@@@@@@@ BODY ARTICLES SECTION @@@@@@@@@@@@ */
+
+.body-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.body-container h1 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 40px;
+  color: rgb(46,45,43);
+}
+
+.article-grid {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  padding: 30px;
+}
+
+.article {
+  margin: 20px;
+  width: 350px;
+  text-decoration: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.article h3 {
+  color: rgb(0,78,54);
+  font-size: 22px;
+}
+
+.article p {
+  color: black;
+}
+
+.article:hover {
+  text-decoration: underline;
+}
+
+.article img {
+  width: 100%;
+}
+
+/* @@@@@@@@@@ FOOTER SECTION @@@@@@@@@ */
+
+.footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 80px;
+}
+
+.footer-column1 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.footer-lists {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+}
+
+.footer-lists ul {
+  list-style-type: none;
+  color: green;
+  font-size: 20px;
+  font-family: 'Merriweather', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 30px 0;
+}
+
+.footer-lists ul h4 {
+  margin-bottom: 10px;
+}
+
+.footer-lists ul li {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  color: black;
+}
+
+.footer-lists ul li a {
+  font-size: 16px;
+  color: black;
+}
+
+.footer-lists ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-lists ul a {
+  text-decoration: none;
+}
+
+.footer-lists:nth-of-type(3) ul .social-media-icons {
+  display: flex;
+  flex-direction: row;
+}
+
+.social-media-icons li a i {
+  font-size: 40px;
+  margin-right: 10px;
+}
+
+/* @@@@@@@ SUB FOOTER @@@@@@@@@@@ */
+
+.footer-column2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 15px 0;
+}
+
+.company-footer {
+  font-weight: 600;
+  margin: 5px;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+.footer-nav li a {
+  padding: 0 10px;
+  border-right: 1px solid black;
+  text-decoration: none;
+  color: black;
+}
+
+.footer-nav li a:hover {
+  text-decoration: underline;
+}
+
+.footer-nav li:nth-of-type(6) a {
+  border-right: none;
+}
+
+@media (max-width: 768px) {
+
+  .article {
+    width: 650px;
+  }
+}
+
+@media (max-width: 576px) {
+
+  /* @@@@@@@ NAVBAR - PHONE @@@@@@@@@ */
+
+  .logo {
+    width: 90px;
+  }
+
+  .navbar {
+    display: grid;
+    grid-template-columns: 20% 1fr 20%;
+    grid-template-rows: 100%;
+  }
+
+  .navlinks {
+    border-right: 1px solid rgba(0, 0, 0, 0.473);
+    margin: 4px;
+    text-decoration: underline;
+  }
+
+  .navlinks:nth-of-type(5) {
+    border-right: none;
+  }
+
+  .navlinks a {
+    font-size: 14px;
+  }
+
+  .article {
+    width: 480px;
+  }
+
+  /* @@@@@@@ FOOTER STYLES FOR PHONES @@@@@@@@@@ */
+
+  .footer-column1 {
+    flex-direction: column;
+  }
+
+  .footer-nav {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .footer-nav li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-nav li a {
+    border-right: none;
+    font-size: 10px;
+  }
+
+}
