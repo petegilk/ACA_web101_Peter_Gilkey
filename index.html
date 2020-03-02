@@ -8,26 +8,67 @@
   <title>My Portfolio</title>
 </head>
   <body>
-    <header>
-      <a href=https://austincodingacademy.com target=blank>
-      <img src="https://cdn.evbuc.com/eventlogos/188084824/acastandardcirclefullname.png" class="logo" alt="austin coding academy logo"></a>
-      <nav>
-        <a href="src/resume/resume.html" class="has-border">Resume</a>
-        <a class="has-border">About Me</a>
-        <a href="./src/blog/blog.html" class="has-border">My Blog</a>
-        <a class="has-border">Contact Me</a>
-      </nav>
+    <div class="main-container">
+      <header>
+        <div id="image-wrap">
+          <img src="./myProfilePicSquare.JPG" alt="my profile picture"/>
+        </div>
+        <div class="header-title">
+          <h1>Peter Gilkey</h1>
+          <h3>Web Dev Student</h3>
+        </div>
       </header>
+      <nav>
+        <ul class="navbar">
+          <a href="index.html" class="navlinks"><li>Home</li></a>
+          <a href="" class="navlinks"><li>About</li></a>
+          <a href="" class="navlinks"><li>Projects</li></a>
+          <a href="" class="navlinks"><li>Contact</li></a>
+          <a href="" class="navlinks"><li>Resume</li></a>
+          <a href="" class="navlinks"><li>Blog</li></a>
+        </ul>
+      </nav>
       <main>
-        <img src="./myProfilePic.JPG" id="profile-pic" alt="Head shot of Me">
-        <h1>Peter Gilkey</h1>
-        <h2>Student of Web Development</h2>
-        <button id="portfolio">Portfolio</button>
-      <a class="small-text" href="https://austincodingacademy.com/">© Austin Coding Academy</a>
+        <section class="media-bar">
+            <!-- <video autoplay muted loop>
+              <source src="./orbitLoop.mp4" type="video/mp4">
+            </video> -->
+          <span>ISS Live Feed</span>
+          <iframe width="480" height="270" src="https://ustream.tv/embed/9408562" scrolling="no" allowfullscreen webkitallowfullscreen frameborder="0" style="border: 0 none transparent;"></iframe>
+        </section>
+        <section class="projects-bar">
+          <span>Project Pages</span>
+            <a href="https://petegilk.github.io/ACA_web101_Peter_Gilkey/src/flexbox/nasa.html" target="_blank"class="projects">
+              <article>NASA Landing Page</article>
+            </a>
+            <a href="https://petegilk.github.io/ACA_web101_Peter_Gilkey/src/hairLandingPage/hair.html" target="_blank" class="projects">
+              <article>Hair Salon Landing Page</article>
+            </a>
+            <a href="https://petegilk.github.io/ACA_web101_Peter_Gilkey/src/checkpoint1/checkpoint1.html" target="_blank" class="projects">
+              <article>Dashboard</article>
+            </a>
+        </section>
       </main>
-      <!--LINKS FOR HOMEWORK SUBMISSION-->
-      <div class="hidden-links">
-        <a href="./src/media-queries/"></a>
-      </div>
+      <footer class="contact-form">
+        <form action="">
+          <div class="form-left form-format">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name-input" placeholder="Enter Your Name">
+            <label for="email">E-mail:</label>
+            <input type="text" id="email" name="email-input" placeholder="E-mail Address"> 
+            <label for="zip-location">ZIP Code:</label>
+            <input type="text" id="zip-location" name="location" placeholder="ZIP Code">
+          </div>
+          <div class="form-right form-format">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" maxlength="350" placeholder="Leave me a message.."></textarea>
+            <div class="button-wrap">
+              <input type="submit" value="Submit">
+              <input type="reset" value="Reset">
+            </div>
+          </div>
+        </form>
+      </footer>
+    </div>
   </body>
 </html>
