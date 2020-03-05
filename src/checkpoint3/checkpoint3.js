@@ -14,9 +14,6 @@ function addByOne() {
   countElement.innerText = currentCount
   console.log("working", currentCount);
   //
-  if (currentCount === 10) {
-    alert("Ten");
-  }
 }
 
 function resetCounter() {
