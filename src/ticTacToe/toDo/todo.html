@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./todo.css">
+  <title>TODO</title>
+</head>
+<body>
+  <div class="main-container">
+    <div class="todo-input boxstyle">
+      <h3>Add a list item:</h3>
+      <textarea name="newItem" id="textField" cols="30" rows="10"></textarea>
+      <button type="submit" name="newItem" onclick="addNewItem()">Submit</button>
+    </div>
+    <div class="todo-list boxstyle">
+      <h3>To Do list:</h3>
+      <ul class="list-of-items" id="list-of-items">
+        <li><input type="checkbox">Check mail</li>
+        <li><input type="checkbox">Go to the gym</li>
+        <li><input type="checkbox">Feed the dog</li>
+        <li><input type="checkbox">Buy dog food</li>
+      </ul>
+    </div>
+  </div>
+  <script type="text/javascript" src="./todo.js"></script>
+</body>
+</html>

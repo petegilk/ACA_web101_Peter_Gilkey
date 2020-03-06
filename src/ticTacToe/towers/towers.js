@@ -1,14 +1,20 @@
-$(document).ready(function() {
   let gamePiece = null;
-  let tower = document.getElementsByClassName('towers')
+  let tower = document.getElementsByClassName('towers');
 
 function gamePlay () {
-  if (gamePiece) {
-    tower.appendChild(gamePiece);
+  var lastChild = tower.lastElementChild
+  if (gamePiece === null) {
+    gamePiece = tower.removeChild(lastElementChild);
   } else {
-    gamePiece = tower.children().last().detach();
+    tower.appendChild(gamePiece);
   }
+  // if (gamePiece !== null) {
+  //   tower.appendChild(gamePiece);
+  // } else {
+  //   gamePiece = tower.children().last().detach();
+  // }
 }
+
 
   // if (gamePiece) {
   //   $(this).append(gamePiece);
