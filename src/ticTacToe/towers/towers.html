@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./towers.css">
+  <script type="text/javascript" src="../../../jquery-3.4.1.min.js" defer></script>
+  <script type="text/javascript" src="./towers.js" defer></script>
+  <title>Towers of Hanoi</title>
+</head>
+<body>
+  <div class="main-container">
+    <h1 class="title">Towers of Hanoi</h1>
+    <div class="game-board">
+      <div class="towers" onclick="gamePlay()">
+        <div class="gamepiece" id="red"></div>
+        <div class="gamepiece" id="blue"></div>
+        <div class="gamepiece" id="green"></div>
+      </div>
+      <div class="towers" onclick="gamePlay()"></div>
+      <div class="towers" onclick="gamePlay()"></div>
+      <div class="towers" onclick="gamePlay()"></div>
+      <div class="towers" onclick="gamePlay()"></div>
+    </div>
+  </div>
+</body>
+</html>

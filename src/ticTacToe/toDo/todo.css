@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  height: 100vh;
+  width: 100vw;
+}
+
+.main-container {
+  background: linear-gradient(45deg, darkseagreen, rgb(53, 126, 64));
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.boxstyle {
+  border: 2px solid green;
+  border-radius: 10px;
+  background-color: lightslategray;
+  width: 40%;
+  height: 500px;
+}
+
+.todo-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h3 {
+  font-size: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  color: rgb(48, 48, 48);
+}
+
+.todo-input textarea {
+  width: 90%;
+  margin: 20px;
+  resize: none;
+  font-size: 22px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.todo-input button {
+  color: white;
+  background-color: rgb(22, 87, 78);
+  border: transparent;
+  width: 100px;
+  height: 40px;
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.todo-list {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.todo-list ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.todo-list ul li {
+  border: 2px outset rgb(241, 241, 241);
+  margin: 5px;
+  padding: 5px;
+  background-color: lightsteelblue;
+  color: rgb(73, 73, 73);
+}
+
+.todo-list ul li input {
+  width: 15px;
+  height: 15px;
+  margin-right: 25px;
+}
