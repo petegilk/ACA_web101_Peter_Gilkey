@@ -4,20 +4,38 @@
 
 function addGamePiece (selectedElement) {
   console.log('selectedElement', selectedElement)
+  var previousPlay;
 
   //create element
   var xo = document.createElement('h1')
-  var previousPlay;
   
   //add text to element
-  xo.innerText = "X"
-  selectedElement.appendChild(xo)
-  previousPlay = "X"
-
-  if (previousPlay === "X") {
+  if (xo.innerText === "") {
+    xo.innerText === "X"
+    selectedElement.appendChild(xo)
+  } else if (xo.innerText === "X") {
     xo.innerText === "O"
     selectedElement.appendChild(xo)
-  } else if (selectedElement.innerText === "O") {
-    selectedElement.innerText === null
+  } else if (xo.innerText === "O") {
+    xo.innerText === ""
+    selectedElement.appendChild(xo)
   }
-}
+
+
+  // xo.innerText = "X"
+  // selectedElement.appendChild(xo)
+  // previousPlay = "X"
+
+
+
+
+
+
+
+  //   if (previousPlay === "X") {
+//     xo.innerText === "O"
+//     selectedElement.appendChild(xo)
+//   } else if (selectedElement.innerText === "O") {
+//     selectedElement.innerText === null
+//   }
+// }

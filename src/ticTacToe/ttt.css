@@ -1,3 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
 .main-container {
   height: 100vh;
   width: 100vw;
@@ -6,11 +16,14 @@
 .main-container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  background-color: gray;
 }
 
 .board {
   border: 6px solid black;
+  background-color: linen;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -28,7 +41,7 @@
 .clickBox {
   height: 100%;
   width: 100%;
-  border: 1px solid blue;
+  border: 1px solid darkgreen;
   display: flex;
   justify-content: center;
   align-items: center;
